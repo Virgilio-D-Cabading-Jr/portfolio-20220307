@@ -39,6 +39,9 @@ const AboutMeView = () => {
   return (<div>
     <div className='container my-2'>
       <h1>About Me</h1>
+      <div className='row'>
+        <img className='main-pic' src='https://i.ibb.co/51DFzGb/val-self-2022-02.jpg' alt='virgilio profile picture' />
+      </div>
       {/* <p>Current Topic: {JSON.stringify(currentTopic.name)}</p>
       <p>Topics: {JSON.stringify(topics)}</p> */}
       <div className='row'>
