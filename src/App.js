@@ -16,6 +16,8 @@ function App() {
     <Switch>
       <Route exact path="/">
         <HomeView />
+        <NavBarComp />
+        <AboutMeView />
       </Route>
       <div className='bg-white'>
         <Route exact path="/aboutme">
