@@ -18,6 +18,8 @@ function App() {
         <HomeView />
         <NavBarComp />
         <AboutMeView />
+        <ProjectsView />
+        <ContactInfoView />
       </Route>
       <div className='bg-white'>
         <Route exact path="/aboutme">
