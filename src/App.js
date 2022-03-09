@@ -19,8 +19,8 @@ function App() {
   return (
     <Switch>
       <Route exact path="/">
+        <NavBarComp />
         <HomeView />
-        <Navbar />
         <AboutMeView />
         <div className='bg-world-01' />
         <ProjectsView />

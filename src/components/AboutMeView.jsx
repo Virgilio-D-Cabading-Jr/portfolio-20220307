@@ -36,7 +36,7 @@ const AboutMeView = () => {
 
   console.log("In About me, Topic", topics);
 
-  return (<div>
+  return (<div className='add-space-top'>
     <div className='container my-2'>
       <h1>About Me</h1>
       <div className='row align-items-center'>

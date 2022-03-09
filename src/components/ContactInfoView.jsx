@@ -5,7 +5,7 @@ import React from 'react'
 ////////////////////////////////////////////////////
 
 const ContactInfoView = () => {
-  return (<div>
+  return (<div className='add-space-top' style={{ height: '100vh' }}>
     <div className='container mt-2'>
       <h1>Contact Information</h1>
       {/* Email */}
