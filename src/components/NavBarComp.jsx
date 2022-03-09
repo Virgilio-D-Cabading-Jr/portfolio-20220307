@@ -14,7 +14,7 @@ const NavBarComp = () => {
     return (
         <header>
             {/* **** Navigation Bar ******** */}
-            <div className='at-top navbar navbar-dark bg-navy-gradient box-shadow'>
+            <div className='navbar navbar-dark bg-navy-gradient box-shadow'>
                 <div className='container d-flex justify-content-between'>
                     {/* **** Site Title ******** */}
                     <Link className='nav-title btn nav-btn-bg-clear' to="/">

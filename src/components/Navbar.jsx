@@ -26,7 +26,7 @@ const Navbar = () => {
         const currentScrollPos = window.pageYOffset;
 
         // set state based on location info
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70 && currentScrollPos > 200));
+        setVisible((currentScrollPos > 300));
 
         // set state to new scroll position
         setPrevScrollPos(currentScrollPos);

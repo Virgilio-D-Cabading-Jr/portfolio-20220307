@@ -19,8 +19,9 @@ function App() {
   return (
     <Switch>
       <Route exact path="/">
-        <NavBarComp />
+        {/* <NavBarComp /> */}
         <HomeView />
+        <Navbar />
         <AboutMeView />
         <div className='bg-world-01' />
         <ProjectsView />
@@ -29,15 +30,15 @@ function App() {
       </Route>
       <div className='bg-white'>
         <Route exact path="/aboutme">
-          <NavBarComp />
+          {/* <NavBarComp /> */}
           <AboutMeView />
         </Route>
         <Route exact path="/projects">
-          <NavBarComp />
+          {/* <NavBarComp /> */}
           <ProjectsView />
         </Route>
         <Route exact path="/contactinfo">
-          <NavBarComp />
+          {/* <NavBarComp /> */}
           <ContactInfoView />
         </Route>
 
