@@ -3,6 +3,7 @@
 ///////////////////////////////////////////////////
 
 import React, { useState, useEffect } from 'react';
+import { debounce } from './Debounce';
 
 const Navbar = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -19,7 +20,7 @@ const Navbar = () => {
     }
 
     // **** Handle Scroll Methode ********
-    const handleScroll = () => {
+    const handleScroll = debounce(() => {
         // find current scroll position
         const currentScrollPos = window.pageYOffset;
 
@@ -28,7 +29,7 @@ const Navbar = () => {
 
         // set state to new scroll position
         setPrevScrollPos(currentScrollPos);
-    };
+    }, 100);
 
     // **** Use Effect *********
     useEffect(() => {
