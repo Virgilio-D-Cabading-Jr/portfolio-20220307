@@ -2,6 +2,7 @@ import './App.css';
 import { Switch, Route } from 'react-router-dom'
 
 import HomeView from './components/HomeView';
+import Navbar from './components/Navbar';
 import NavBarComp from './components/NavBarComp';
 import AboutMeView from './components/AboutMeView';
 import ProjectsView from './components/ProjectsView';
@@ -19,7 +20,7 @@ function App() {
     <Switch>
       <Route exact path="/">
         <HomeView />
-        
+        <Navbar />
         <AboutMeView />
         <ProjectsView />
         <ContactInfoView />

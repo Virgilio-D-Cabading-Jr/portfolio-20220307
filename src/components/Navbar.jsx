@@ -4,6 +4,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { debounce } from './Debounce';
+import NavBarComp from './NavBarComp';
 
 const Navbar = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -14,8 +15,8 @@ const Navbar = () => {
         position: 'fixed',
         height: '60px',
         width: '100%',
-        backgroundColor: 'grey',
-        textAlign: 'center',
+        backgroundColor: 'rgb(8,5,75)',
+        background: 'linear-gradient(120deg, rgba(8,5,75,1) 0%, rgba(76,76,205,1) 40%, rgba(8,5,75,1) 100%)',
         transition: 'top 0.6s'
     }
 
@@ -40,8 +41,8 @@ const Navbar = () => {
     }, [prevScrollPos, visible, handleScroll]);
 
     return (
-        <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }}>
-            Some Company Inc.
+        <div style={{ ...navbarStyles, top: visible ? '0' : '-80px' }}>
+            <NavBarComp />
         </div>
     );
 };
