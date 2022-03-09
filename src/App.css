@@ -21,6 +21,22 @@
   /* overflow: scroll; */
 }
 
+.bg-world-01 {
+  background: url("https://i.ibb.co/M1jbK1K/World-1-and-0-blue.jpg") no-repeat center center fixed;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+  height: 20vh;
+  /* overflow: scroll; */
+}
+
+.bg-makati-skyline {
+  background: url("https://i.ibb.co/LxsnpKT/Makati-night-sky-2022-1.png") no-repeat center center fixed;
+  background-size: cover;
+  height: 20vh;
+}
+
 .bg-manila-harbor {
   background: url("https://i.ibb.co/mNV1w10/manila-harbor-v202203090530.jpg") no-repeat center center fixed;
   /* -webkit-background-size: cover;

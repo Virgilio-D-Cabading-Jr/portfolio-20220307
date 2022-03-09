@@ -22,7 +22,9 @@ function App() {
         <HomeView />
         <Navbar />
         <AboutMeView />
+        <div className='bg-world-01' />
         <ProjectsView />
+        <div className='bg-makati-skyline' />
         <ContactInfoView />
       </Route>
       <div className='bg-white'>
