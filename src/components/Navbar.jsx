@@ -8,7 +8,7 @@ import NavBarComp from './NavBarComp';
 
 const Navbar = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
+    const [visible, setVisible] = useState(false);
 
     // **** Styling for Navbar ********
     const navbarStyles = {
@@ -26,7 +26,7 @@ const Navbar = () => {
         const currentScrollPos = window.pageYOffset;
 
         // set state based on location info
-        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70));
 
         // set state to new scroll position
         setPrevScrollPos(currentScrollPos);
