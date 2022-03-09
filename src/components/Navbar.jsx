@@ -2,12 +2,13 @@
 //  src/components/Navbar.js
 ///////////////////////////////////////////////////
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
     const [visible, setVisible] = useState(true);
 
+    // **** Styling for Navbar ********
     const navbarStyles = {
         position: 'fixed',
         height: '60px',
@@ -16,8 +17,28 @@ const Navbar = () => {
         textAlign: 'center'
     }
 
+    // **** Handle Scroll Methode ********
+    const handleScroll = () => {
+        // find current scroll position
+        const currentScrollPos = window.pageYOffset;
+
+        // set state based on location info
+        setVisible((prevScrollPos > currentScrollPos && prevScrollPos - currentScrollPos > 70) || currentScrollPos < 10);
+
+        // set state to new scroll position
+        setPrevScrollPos(currentScrollPos);
+    };
+
+    // **** Use Effect *********
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+
+    }, [prevScrollPos, visible, handleScroll]);
+
     return (
-        <div style={{ ...navbarStyles }}>
+        <div style={{ ...navbarStyles, top: visible ? '0' : '-60px' }}>
             Some Company Inc.
         </div>
     );
