@@ -39,8 +39,9 @@ const AboutMeView = () => {
   return (<div>
     <div className='container my-2'>
       <h1>About Me</h1>
-      <div className='row'>
-        <img className='main-pic' src='https://i.ibb.co/51DFzGb/val-self-2022-02.jpg' alt='virgilio profile picture' />
+      <div className='row align-items-center'>
+        <img className='main-pic col-md-3' src='https://i.ibb.co/51DFzGb/val-self-2022-02.jpg' alt='virgilio profile picture' />
+        <p className='col-md-8 text-center'>Hello, I am a highly motivated Software Developer transitioning from the healthcare industry with a B.S. in Informatics.  My interests are many, but I am currently interested in expanding my knowledge on Javascript (React), Java (Spring) and Python (Flask).</p>
       </div>
       {/* <p>Current Topic: {JSON.stringify(currentTopic.name)}</p>
       <p>Topics: {JSON.stringify(topics)}</p> */}

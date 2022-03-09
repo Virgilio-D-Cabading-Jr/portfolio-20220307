@@ -67,6 +67,12 @@
   color: navy;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* About Me View */
 
 .bg-lblue {

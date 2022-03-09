@@ -16,7 +16,7 @@ function App() {
     <Switch>
       <Route exact path="/">
         <HomeView />
-        <NavBarComp />
+        <NavBarComp className="sticky" />
         <AboutMeView />
         <ProjectsView />
         <ContactInfoView />
