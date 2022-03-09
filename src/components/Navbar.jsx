@@ -14,7 +14,8 @@ const Navbar = () => {
         height: '60px',
         width: '100%',
         backgroundColor: 'grey',
-        textAlign: 'center'
+        textAlign: 'center',
+        transition: 'top 0.6s'
     }
 
     // **** Handle Scroll Methode ********
