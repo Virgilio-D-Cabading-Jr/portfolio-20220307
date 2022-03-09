@@ -12,6 +12,9 @@ import ContactInfoView from './components/ContactInfoView';
 ////////////////////////////////////////////////////
 
 function App() {
+
+
+
   return (
     <Switch>
       <Route exact path="/">
