@@ -50,6 +50,7 @@ const ContactInfoView = () => {
           </a>
         </div>
       </div>
+      <a href="#title"> Back to the top </a>
     </div>
   </div>)
 }

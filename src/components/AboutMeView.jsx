@@ -36,9 +36,9 @@ const AboutMeView = () => {
 
   console.log("In About me, Topic", topics);
 
-  return (<div className='add-space-top'>
+  return (<div className=''>
     <div className='container my-2'>
-      <h1>About Me</h1>
+      <h1 >About Me</h1>
       <div className='row align-items-center'>
         <img className='main-pic col-md-3' src='https://i.ibb.co/51DFzGb/val-self-2022-02.jpg' alt='virgilio profile picture' />
         <h4 className='col-md-8 text-center'>Hello, I am Virgilio Cabading,<br />a highly motivated Software Developer<br />transitioning from the healthcare industry</h4>

@@ -1,7 +1,5 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
-import React, { forwardRef, useRef } from 'react';
-
 
 import HomeView from './components/HomeView';
 import Navbar from './components/Navbar';
@@ -13,40 +11,28 @@ import ContactInfoView from './components/ContactInfoView';
 //  ROOT APPLICATION
 ////////////////////////////////////////////////////
 
-const App = forwardRef(({ onBackClick }, ref) => {
+const App = () => {
   return (
     <Switch>
       <Route exact path="/">
-        <h1 ref={ref}>An interesting article for Latin readers</h1>
-
-        <HomeView />
+        <div id='title'>
+          <HomeView />
+        </div>
         <Navbar />
         <div id='aboutme'>
+          <div className='add-space-top' />
           <AboutMeView />
         </div>
         <div className='bg-world-01' />
-        <ProjectsView />
-        <div className='bg-makati-skyline' />
-        <ContactInfoView />
-        <a href="#title"> Back to the top </a>
-      </Route>
-      <div className='bg-white'>
-        <Route exact path="/aboutme">
-          {/* <NavBarComp /> */}
-          <AboutMeView />
-        </Route>
-        <Route exact path="/projects">
-          {/* <NavBarComp /> */}
+        <div id='projects'>
+          <div className='add-space-top' />
           <ProjectsView />
-        </Route>
-        <Route exact path="/contactinfo">
-          {/* <NavBarComp /> */}
-          <ContactInfoView />
-        </Route>
+        </div>
 
-      </div>
+        {/* <a href="#title"> Back to the top </a> */}
+      </Route>
     </Switch>
   );
-})
+}
 
 export default App;

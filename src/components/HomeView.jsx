@@ -15,12 +15,12 @@ const HomeView = () => {
           <div />
           {/* **** Link to Views ******** */}
           <div className='row nav-btns align-items-center'>
-            <Link to="/aboutme" className='col btn nav-btn-bg-clear' >
+            <a href='#aboutme' className='col btn nav-btn-bg-clear' >
               <strong>About Me</strong>
-            </Link>
-            <Link to="/projects" className='col btn nav-btn-bg-clear' >
+            </a>
+            <a href='#projects' className='col btn nav-btn-bg-clear' >
               <strong>Projects</strong>
-            </Link>
+            </a>
             <Link to="/contactinfo" className='col btn nav-btn-bg-clear' >
               <strong>Contact Info</strong>
             </Link>
