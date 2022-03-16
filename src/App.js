@@ -1,6 +1,8 @@
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 
+import Article from './components/article';
+
 import HomeView from './components/HomeView';
 import Navbar from './components/Navbar';
 import NavBarComp from './components/NavBarComp';
@@ -19,6 +21,7 @@ function App() {
   return (
     <Switch>
       <Route exact path="/">
+        <Article />
         {/* <NavBarComp /> */}
 
         <HomeView />
