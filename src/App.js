@@ -28,7 +28,11 @@ const App = () => {
           <div className='add-space-top' />
           <ProjectsView />
         </div>
-
+        <div className='bg-makati-skyline' />
+        <div id='contactinfo'>
+          <div className='add-space-top' />
+          <ContactInfoView />
+        </div>
         {/* <a href="#title"> Back to the top </a> */}
       </Route>
     </Switch>

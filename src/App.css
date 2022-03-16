@@ -27,14 +27,14 @@
   -moz-background-size: cover;
   -o-background-size: cover; */
   background-size: cover;
-  height: 20vh;
+  height: 30vh;
   /* overflow: scroll; */
 }
 
 .bg-makati-skyline {
   background: url("https://i.ibb.co/LxsnpKT/Makati-night-sky-2022-1.png") no-repeat center center fixed;
   background-size: cover;
-  height: 20vh;
+  height: 40vh;
 }
 
 .bg-manila-harbor {

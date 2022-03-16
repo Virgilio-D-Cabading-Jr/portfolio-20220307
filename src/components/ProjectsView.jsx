@@ -5,7 +5,7 @@ import React from 'react'
 ////////////////////////////////////////////////////
 
 const ProjectsView = () => {
-  return (<div className='add-space-top'>
+  return (<div>
     <div className='container mt-2'>
       <h1>Projects</h1>
       <div className='row my-3 bg-lblue text-linen rounded p-3'>
