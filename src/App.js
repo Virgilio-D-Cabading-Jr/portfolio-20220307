@@ -20,9 +20,12 @@ function App() {
     <Switch>
       <Route exact path="/">
         {/* <NavBarComp /> */}
+
         <HomeView />
         <Navbar />
-        <AboutMeView />
+        <div id='aboutme'>
+          <AboutMeView />
+        </div>
         <div className='bg-world-01' />
         <ProjectsView />
         <div className='bg-makati-skyline' />
