@@ -1,11 +1,10 @@
 import './App.css';
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom';
+import React, { forwardRef, useRef } from 'react';
 
-import Article from './components/article';
 
 import HomeView from './components/HomeView';
 import Navbar from './components/Navbar';
-import NavBarComp from './components/NavBarComp';
 import AboutMeView from './components/AboutMeView';
 import ProjectsView from './components/ProjectsView';
 import ContactInfoView from './components/ContactInfoView';
@@ -14,15 +13,11 @@ import ContactInfoView from './components/ContactInfoView';
 //  ROOT APPLICATION
 ////////////////////////////////////////////////////
 
-function App() {
-
-
-
+const App = forwardRef(({ onBackClick }, ref) => {
   return (
     <Switch>
       <Route exact path="/">
-        <Article />
-        {/* <NavBarComp /> */}
+        <h1 ref={ref}>An interesting article for Latin readers</h1>
 
         <HomeView />
         <Navbar />
@@ -33,6 +28,7 @@ function App() {
         <ProjectsView />
         <div className='bg-makati-skyline' />
         <ContactInfoView />
+        <a href="#title"> Back to the top </a>
       </Route>
       <div className='bg-white'>
         <Route exact path="/aboutme">
@@ -51,6 +47,6 @@ function App() {
       </div>
     </Switch>
   );
-}
+})
 
 export default App;

@@ -22,6 +22,7 @@ const Article = () => {
                     fringilla quam orci pellentesque enim.
                 </p>
                 <p>...</p>
+                <a href="#title"> Back to the top </a>
             </article>
         </div>
     )
