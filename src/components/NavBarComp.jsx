@@ -25,12 +25,12 @@ const NavBarComp = () => {
                         <a href='#aboutme' className='col btn nav-btn-bg-clear' >
                             <strong>About Me</strong>
                         </a>
-                        <Link to="/projects" className='col btn nav-btn-bg-clear' >
+                        <a href='#projects' className='col btn nav-btn-bg-clear' >
                             <strong>Projects</strong>
-                        </Link>
-                        <Link to="/contactinfo" className='col btn nav-btn-bg-clear' >
+                        </a>
+                        <a href='#contactinfo' className='col btn nav-btn-bg-clear' >
                             <strong>Contact Info</strong>
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>
