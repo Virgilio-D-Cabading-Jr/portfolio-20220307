@@ -41,7 +41,7 @@ const AboutMeView = () => {
       <h1 >About Me</h1>
       <div className='row align-items-center'>
         <img className='main-pic col-md-3' src='https://i.ibb.co/51DFzGb/val-self-2022-02.jpg' alt='virgilio profile picture' />
-        <h4 className='col-md-8 text-center'>Hello, I am Virgilio Cabading,<br />a highly motivated Software Developer<br />transitioning from the healthcare industry</h4>
+        <h4 className='col-md-8'>Hello, I am Virgilio Cabading,<br />a highly motivated Software Developer<br />transitioning from the healthcare industry</h4>
       </div>
       {/* <p>Current Topic: {JSON.stringify(currentTopic.name)}</p>
       <p>Topics: {JSON.stringify(topics)}</p> */}
