@@ -23,7 +23,7 @@ const ContactInfoView = () => {
           <img className='img-thumb' src="https://i.ibb.co/q7rkpRS/resume-thumb.png" alt="resume" />
         </div>
         <div className='col-9'>
-          <a href="https://drive.google.com/file/d/1eQ47OPjhQiiqSZ0uY7EXeNV61AGn1TFo/view">
+          <a href="https://drive.google.com/file/d/1NYiBUnbm4hnguZRXPZT1f0l45VhnUGDD/view?usp=sharing">
             <h3>Resume</h3>
           </a>
         </div>
